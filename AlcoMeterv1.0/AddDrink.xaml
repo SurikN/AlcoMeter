@@ -1,0 +1,208 @@
+﻿<Window x:Class="AlcoMeterv1._0.AddDrink"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlcoMeterv1._0"
+        mc:Ignorable="d"
+        Title="AddDrink" Height="300" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"
+              Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <!-- RadioButtons -->
+            <RadioButton Name="SelectAdding"
+                             GroupName="AddingWays"
+                             FontSize="20"
+                             Content="Select"
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Height="Auto"
+                             Width="80"
+                             Margin="10"
+                             VerticalAlignment="Center" Checked="SelectAdding_Checked" HorizontalAlignment="Right"/>
+            <RadioButton Name="ManualAdding"
+                             GroupName="AddingWays"
+                             FontSize="20"
+                             Content="Enter"
+                             Grid.Row="1"
+                             Grid.Column="0"
+                             Height="Auto"
+                             Width="Auto"
+                             Margin="10"
+                             VerticalAlignment="Center" Checked="ManualAdding_Checked"/>
+            <!-- Selecting elements -->
+            <Grid x:Name="SelectGrid"
+                  Grid.Row="0"
+                  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Name:"
+                           Grid.Row="0"
+                           Margin="5"
+                           FontSize="25"
+                           HorizontalAlignment="Left">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground"
+                            Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <ComboBox Name="SelectedDrinkNameBox"
+                          Grid.Row="0"
+                          Grid.Column="0"
+                          Height="Auto"
+                          Width="250"
+                          Margin="5"
+                          FontSize="25"
+                          HorizontalAlignment="Right"
+                          ItemsSource="{Binding Drinks}"/>
+                <TextBlock Text="Quantity:"
+                           Grid.Row="1"
+                           Margin="5"
+                           FontSize="25"
+                           HorizontalAlignment="Left">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground"
+                            Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBox x:Name="SelectedAmountTextBox"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         Height="Auto"
+                         Width="200"
+                         Margin="5"
+                         FontSize="25"
+                         HorizontalAlignment="Right"/>
+            </Grid>
+            <!-- Manual entering elements -->
+            <Grid x:Name="ManualGrid"
+                  Grid.Row="1"
+                  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Name:"
+                           Grid.Row="0"
+                           Margin="5"
+                           FontSize="25"
+                           HorizontalAlignment="Left">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground"
+                            Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBox x:Name="ManualDrinkNameBox"
+                         Grid.Row="0"
+                         Width="250"
+                         Margin="5"
+                         FontSize="25"
+                         HorizontalAlignment="Right"/>
+                <TextBlock Text="Amount (ml):"
+                           Grid.Row="1"
+                           Margin="5"
+                           FontSize="25"
+                           HorizontalAlignment="Left">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground"
+                            Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBox x:Name="ManualAmountTextBox"
+                         Grid.Row="1"
+                         Height="Auto"
+                         Width="200"
+                         Margin="5"
+                         FontSize="25"
+                         HorizontalAlignment="Right"/>
+                <TextBlock Text="Alcohol (%)"
+                           Grid.Row="2"
+                           Margin="5"
+                           FontSize="25"
+                           HorizontalAlignment="Left">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Style.Triggers>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Foreground"
+                            Value="{StaticResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBox x:Name="ManualAlcoholTextBox"
+                         Grid.Row="2"
+                         Height="Auto"
+                         Width="200"
+                         Margin="5"
+                         FontSize="25"
+                         HorizontalAlignment="Right"/>
+            </Grid>
+        </Grid>
+        <!-- Bottom panel Button Grid -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- OK Button -->
+            <Button x:Name="OkButton"
+                    Content="OK"
+                    Height="Auto"
+                    Width="Auto"
+                    Grid.Column="1"
+                    Margin="5"
+                    FontSize="23" Click="OkButton_Click"/>
+            <!-- Cancel Button -->
+            <Button x:Name="CancelButton"
+                    Content="Cancel"
+                    Height="Auto"
+                    Width="113"
+                    Grid.Column="2"
+                    Margin="5"
+                    FontSize="23" HorizontalAlignment="Right" Click="CancelButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\MainWindow.g.cs
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\App.g.cs
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0_MarkupCompile.cache
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0_MarkupCompile.lref
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\bin\Debug\AlcoMeterv1.0.exe.config
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\bin\Debug\AlcoMeterv1.0.exe
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\bin\Debug\AlcoMeterv1.0.pdb
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\MainWindow.baml
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.g.resources
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1._0.Properties.Resources.resources
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.csproj.GenerateResource.cache
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.csproj.CoreCompileInputs.cache
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.exe
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.pdb
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AddDrink.g.cs
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AddDrink.baml
+C:\Users\surok\source\repos\AlcoMeterv1.0\AlcoMeterv1.0\obj\Debug\AlcoMeterv1.0.csprojAssemblyReference.cache
